@@ -3,8 +3,8 @@ import urllib.request
 import time
 from bs4 import BeautifulSoup
 
-query = "programmer" #type of job
-location = "West Yorkshire" #job location
+query = input("Job type: ") #type of job
+location = input("Location: ") #job location
 
 indeed = "https://www.indeed.co.uk/jobs?q=" + query + "&l=" + location #indeed.co.uk search with type of job and location
 reed = "https://www.reed.co.uk/jobs/" + query + "-jobs-in-" + location #reed.co.uk search with type of job and location
